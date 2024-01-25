@@ -25,6 +25,8 @@ function Category() {
       if(response.status>=200 && response.status<300){
         //hide modal
         handleClose()
+
+        toast.success('Category Added')
         //reset state
         setCategoryName('')
         //call addCategory
@@ -83,6 +85,7 @@ function Category() {
     <div className="d-grid">
       <button onClick={handleShow} className="btn btn-info">Add New Category</button>
     </div>
+    <h1>Categories</h1>
     {
       allCategory.length>0 ? 
       allCategory?.map((ele)=>(
@@ -127,6 +130,9 @@ function Category() {
          <p>Please fill the following Details!!!</p>
 
          <Form className='border border-warning rounded p-3'>
+          
+         
+         
           
          
           <Form.Group className="mb-3" controlId="formBasicEmail">

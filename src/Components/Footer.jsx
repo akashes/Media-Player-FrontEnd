@@ -6,27 +6,27 @@ function Footer() {
     <div style={{width:'100%'}}>
         <div className='container' style={{width:'100%',  display:'flex', justifyContent:'space-between', gap:'4rem'}}>
             <div className='website' style={{flex:2}} >
-                <h3>                <i class="fa-solid fa-cloud-arrow-up"></i>            {' '}
-Media Player</h3>
+                     
+   <h3 className='text-warning d-flex justify-content-start align-items-center' >    <i className="fa-solid fa-video text-white me-3 fa-2x"></i> Media Player</h3>
                 <p>React-Bootstrap replaces the Bootstrap JavaScript. Each component has been built from scratch as a true React component, without unneeded dependencies like jQuery.
 
 </p>
                 
             </div>
             <div className='links gap-2' style={{flex:1 ,display:'flex',flexDirection:'column'}}>
-                <h3>Links</h3>
+                <h3 className='text-warning'>Links</h3>
                 <Link  style={{textDecoration:'none',color:'white'}}  to={'/'}>Landing Page </Link>
                 <Link style={{textDecoration:'none',color:'white'}} to={'/home'}>Home </Link>
                 <Link style={{textDecoration:'none',color:'white'}} to={'/watch-history'}>Watch History </Link>
             </div>
             <div className='guides d-flex flex-column gap-2' style={{flex:1}}>
-                <h3>Guides</h3>
+                <h3 className='text-warning'>Guides</h3>
                 <Link style={{textDecoration:'none',color:'white'}} to={'https://getbootstrap.com/'}>React</Link>
                 <Link style={{textDecoration:'none',color:'white'}} to={'https://react-bootstrap.github.io/'}>React Bootstrap</Link>
                 <Link style={{textDecoration:'none',color:'white'}} to={'https://react-bootstrap.github.io/'}>Routing</Link>
             </div>
             <div className='contact'>
-                <h3>Contact us</h3>
+                <h3 className='text-warning'>Contact us</h3>
                 <div className='d-flex'>
                     <input type="text" className='form-control' placeholder='Enter your Mail' />
                     <button className='btn btn-primary ms-2'>Subscribe</button>

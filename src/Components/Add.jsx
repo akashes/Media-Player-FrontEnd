@@ -17,6 +17,8 @@ function Add({setUploadVideoServerResponse}) {
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+
   const extractUrl=(e)=>{
   const {value}=e.target
   if(value){
@@ -82,6 +84,7 @@ const handleUpload= async ()=>{
       <button onClick={handleShow} className='btn'> <i className='fa-solid fa-circle-plus fs-1'></i> </button>
     </div>
     <Modal
+   
         show={show}
         onHide={handleClose}
         backdrop="static"

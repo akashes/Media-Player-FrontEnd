@@ -8,7 +8,7 @@ function Home() {
 	const [uploadVideoServerResponse,setUploadVideoServerResponse]=useState({})
 	return (
 		<>
-			<div className="container mt-5 mb-5 d-flex align-items-center justify-content-between">
+			<div style={{height:'200px'}}  className="container mt-4 d-flex align-items-center justify-content-between">
 				<div className="add">
 					<Add setUploadVideoServerResponse={setUploadVideoServerResponse} />
 				</div>
@@ -17,7 +17,7 @@ function Home() {
 				</Link>
 			</div>
 
-			<Row className="container-fluid w-100 mt-5 mb-5 align-items-center ">
+			<Row style={{minHeight:'70vh'}} className="container-fluid w-100  mb-5 align-items-center ">
 				<Col lg={8} className="allVideos">
 					<h3>All Videos</h3>
 					<div className="videos">

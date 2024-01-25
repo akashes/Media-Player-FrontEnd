@@ -6,11 +6,12 @@ import { serverURL } from "./serverURL";
 //uploading video
 //for add component
 export const uploadVideo = async (body)=>{
-    return await commonAPI('post',`${serverURL}/videos`,body)
+    return await commonAPI('POST',`${serverURL}/videos`,body)
 }
 
 // get all videos
 //for view componnent
+//body as empty string with no space
 export const getAllVideos=async()=>
 {
     return await commonAPI("GET",`${serverURL}/videos`,"")

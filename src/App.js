@@ -4,15 +4,17 @@ import Home from './Pages/Home';
 import { Route,Routes } from 'react-router-dom';
 import WatchHistory from './Pages/WatchHistory';
 import Header from './Components/Header';
-import Footer from './Components/Footer';
+import Footer from './Components/Footer';import { useState } from 'react';
 
 
 function App() {
+  const[headerColor,setHeaderColor]=useState("#0093d5")
+
   return (
   <div>
-    <Header/>
+    <Header headerColor={headerColor} />
     <Routes>
-      <Route path='/' element={<LandingPage/>}/>
+      <Route path='/' element={<LandingPage setHeaderColor={setHeaderColor} />}/>
       <Route path='/home' element={<Home/>}/>
       <Route path='/Watch-history' element={<WatchHistory/>}/>
     </Routes>

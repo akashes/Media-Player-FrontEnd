@@ -62,7 +62,7 @@ function VideoCard({displayData,setDeleteVideoStatus,deleteIcon}) {
       displayData &&
     
       <Card className='mb-3' draggable onDragStart={(e)=>dragStarted(e,displayData?.id)} >
-      <Card.Img onClick={handleShow} className='w-100' variant="top" style={{height:'140px'}} src={displayData?.url} />
+      <Card.Img onClick={handleShow} className='w-100' variant="top" style={{height:'140px',objectFit:'cover'}} src={displayData?.url} />
       <Card.Body>
         <Card.Title className='d-flex justify-content-between align-items-center'>
           <h6>{displayData?.caption}</h6>
